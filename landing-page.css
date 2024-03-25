@@ -1,0 +1,2071 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --primary-brand-color: #f53838;
+    --primary-text-color: #0b132a;
+    --secondary-text-color:#4f5665;
+    --accent-color: #2fab73;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--secondary-text-color);
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    font-size:  50px;
+    line-height: 70px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+
+h2 {
+    margin: 0;
+    font-size: 35px;
+    line-height: 50px;
+    color: var(--primary-text-color);
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500px;
+    line-height: 30px;
+    color: var(--primary-text-color);
+}
+
+.inner-container {
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    padding: 46px 0;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+}
+
+header .middle {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-color);
+    font-size: 20px;
+    line-height: auto;
+    font-weight: 500;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo svg {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin-right: 40px;
+}
+
+.menu ul li:last-child {
+    margin: 0;
+}
+
+
+
+.sign-in-link {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+button.secondary-style {
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid var(--primary-brand-color);
+    background-color: transparent;
+    color: var(--primary-brand-color);
+    font-weight: 500;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: auto;
+    transition: 0.1s ease-out;
+}
+
+.sign-up-button {
+    padding: 13px 45px;
+}
+
+button.secondary-style:hover {
+    color: #fff;
+    background-color: var(--primary-brand-color);
+}
+
+
+
+
+
+
+
+.main-content {
+    position: relative;
+    width: 1140px;
+}
+
+.main-text {
+    max-width: 555px;
+    padding: 66px 0 25px;
+}
+
+.section-paragraph {
+    margin: 20px 0 0;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+button.primary-style {
+    cursor: pointer;
+    background-color: var(--primary-brand-color);
+    color: #fff;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.6em;
+    min-width: 250px;
+    padding: 17.5px;
+    box-shadow: 0 25px 54px  rgb(245,56,56,0.35);
+}
+
+button.primary-style:active {
+    transform: scale(0.98);
+}
+
+.get-started {
+    margin-top: 50px;
+    width: 250px;
+}
+
+.main-image {
+    position: absolute;
+    left: 596px;
+    top: 38.5px;
+}
+
+.main-image img {
+    width: 611.24px;
+}
+
+.main-info {
+    margin-top: 103px;
+    padding: 37px 91px;
+    display: flex;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+}
+
+.main-info::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 35.58px;
+    right: 35.58px;
+    top: 52.8px;
+    height: 98%;
+    width: calc(100% - 72.6px);
+    background-color: #0d102510;
+    filter: blur(50px);
+    border-radius: 10px;
+}
+
+.main-info .info-block {
+    display: flex;
+    align-items: center;
+    padding-right: 130px;
+    border-right: 2px solid #eeeff2;
+    margin-right: 113px;
+}
+
+.main-info .info-block:last-child {
+    margin: 0;
+    padding: 0;
+    border-right: none;
+}
+
+.info-block .block-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #ffecec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-brand-color);
+    margin-right: 36.5px;
+}
+
+.info-block .amount {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--primary-text-color);
+}
+
+.info-block .title a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.features-content{
+   padding: 95.8px 0 0 ;
+   display: flex;
+}
+
+.features-text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 169px;
+    max-width: 428px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    font-size: 14px;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.check-box-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 10px;
+    margin-right: 12px;
+}
+
+
+
+
+.subscription-content {
+    padding-top: 207px;
+}
+
+.subscription-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscription-text h2 {
+    text-align: center;
+}
+
+.subscription-text .section-paragraph {
+    text-align: center;
+    max-width: 555px;
+}
+
+.subscription-plans-container {
+    display: flex;
+    margin-top: 60px;
+}
+
+.plan {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    min-height: 760px;
+    padding: 80px 70px;
+}
+
+.plan:hover {
+    border-color: var(--primary-brand-color);
+    outline: 2px solid var(--primary-brand-color);
+    box-shadow: 0 10px 44px rgba(245, 56, 56, 0.192);
+}
+
+.plan:last-child {
+    margin: 0;
+}
+
+.plan .plan-title {
+    margin: 30px 0;
+}
+
+.privilage-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.privilage-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.check-box {
+    color: var(--accent-color);
+    font-size: 14px;
+    margin-right: 26px;
+}
+
+.selecting-area {
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.price {
+    font-size: 25px;
+}
+
+.price .sum {
+    font-weight: 500;
+    color: var(--primary-text-color);
+}
+
+button.select-plan {
+    padding: 13px 63px;
+    margin-top: 20px;
+}
+
+.plan:hover button.select-plan {
+    background-color: var(--primary-brand-color);
+    color: #fff;
+    box-shadow: 0 17px 54px rgb(245,56,56,0.35);
+}
+
+
+
+
+
+
+.locations-content {
+    padding-top: 150px;
+
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.locations-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations-text h2 {
+    max-width: 383px;
+    text-align: center;
+}
+
+.locations-text .section-paragraph {
+    max-width: 555px;
+    text-align: center;
+}
+
+.map {
+    margin-top: 156px;
+}
+
+.sponsorship {
+    display: flex;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.sponsor {
+    margin-right: 42px;
+}
+
+.sponsor a {
+    display: flex;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+
+section#reviews {
+    background-color: #fff;
+}
+
+.reviews-content {
+    padding: 50px 0 182px;
+    max-width: 1440px;
+    overflow: hidden;
+}
+
+.reviews-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews-text h2 {
+    max-width: 448px;
+    text-align: center;
+}
+
+.reviews-text .section-paragraph {
+    max-width: 555px;
+    text-align: center;
+}
+
+.reviews-container {
+    margin-top: 60px;
+    padding: 0 0 0 150px;
+    display: flex;
+}
+
+.review-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 30px;
+    margin-right: 50px;
+    min-width: 400px;
+    max-width: 400px;
+}
+
+.review-card:last-child {
+    margin: 0;
+}
+
+.review-card.active {
+    border-color: var(--primary-brand-color);
+    outline: 2px solid var(--primary-brand-color);
+    box-shadow: 0 0 25px #f538384f;
+}
+
+.review-card .top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review-card .user {
+    display: flex;
+    align-items: center;
+}
+
+.review-card .user .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.review-card .user .avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.review-card .user-info {
+    margin-left: 20px;
+}
+
+.review-card .user-name {
+    line-height: 16px;
+}
+
+.review-card .user-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.review-card .user-location {
+    font-size: 14px;
+    margin-top: 7px;
+    line-height: 100%;
+}
+
+.review-card .rate {
+    color: var(--primary-text-color);
+}
+
+.review-card .rate .fa-star {
+    color: #fea250;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.review-card .user-review {
+    margin: 20px 0 0;
+    color: var(--primary-text-color);
+}
+
+
+
+
+.review-sliding-tab {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 150px;
+    margin-top: 60px;
+}
+
+.slide-circles-container {
+    display: flex;
+    align-items: center;
+}
+
+.slide-circle {
+    width: 15px;
+    height: 15px;
+    background-color: #dde0e4;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: width 0.2s ease-out, color 0.2s ease-out;
+    cursor: pointer;
+}
+
+.slide-circle.active {
+    background-color: var(--primary-brand-color);
+    width: 34px;
+    border-radius: 45px;
+    cursor: default;
+}
+
+.slide-buttons-container {   
+    display: flex;
+}
+
+.slide-buttons-container button {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: var(--primary-brand-color);
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-buttons-container button:active {
+    transform: scale(0.95);
+}
+
+.slide-buttons-container button:disabled {
+    border: 2px solid  var(--primary-brand-color);
+    background-color: transparent;
+    color: var(--primary-brand-color);
+}
+
+.slide-buttons-container .prev {
+    margin-right: 20px;
+}
+
+
+
+
+
+
+footer {
+    background-color: #f8f8f8;
+    position: relative;
+}
+
+
+.subscribe-tab-container  {  
+    display: flex;
+    justify-content: center;
+    position: absolute; 
+    z-index: 2;
+    bottom: 100% ;
+    left: 0;
+    width: 100%;
+    transform: translateY(50%);
+}
+
+
+.subscribe-tab {
+    display: flex;
+    align-items: center;
+    padding: 58.5px 70px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.subscribe-tab::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: -5%;
+    content: '';
+    border-radius: 10px;
+    height: 60%;
+    width: 110%;
+    background-color: #0d10251e;
+    filter: blur(114px);
+}
+
+.subscribe-tab-text {
+    max-width: 372px;
+    margin-right: 378px;
+}
+
+.top-covering-block {
+    position: absolute;
+    z-index: -1;
+    bottom: 50%;
+    width: 100%;
+    height: 58%;
+    background-color: #fff;
+}
+
+
+
+
+.footer-content {
+    padding: 180px 0 100px;
+    display: flex;
+    align-items: top;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .laslesvpn {
+    margin-right: 230px;
+    max-width: 340px;
+}
+
+footer .social-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+footer .social-network {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: var(--primary-brand-color);
+    box-shadow: 0 3px 25px rgba(13, 16, 37, 0.123);
+    margin-right: 20px;
+}
+
+footer .initials {
+    color: #afb5c0;
+    margin-top: 30px;
+}
+
+.footer-nav-container {
+    display: flex;
+}
+
+.footer-nav {
+    margin-right: 126px;
+}
+
+.footer-content ul {
+    margin: 20px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer-nav ul li:last-child {
+    margin-bottom: 0;
+}
+
+.mobile {
+    display: none;
+}
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1300px) {
+    body {
+        font-size: calc(17 * (50vw / 10000 + 1px));
+    }
+
+    h1 {
+        font-size: 270%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 110%;
+    }
+
+    .header-content {
+        width: 90%;
+    }
+
+    header .menu li {
+        margin-right: 2em;
+    }
+
+
+
+    .main-content {
+        width: 90%;
+    }
+
+    .main-text {
+        width: 54%;
+    }
+
+    .main-image {
+        width: 50%;
+        left: initial;
+        right: -2vw;
+        top: 0;
+        padding: 50px 0;
+        z-index: -1;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .main-info {
+        width: 100%;
+        padding: 2em 4em;
+    }
+
+    .main-info .info-block {
+        padding: 0;
+        margin: 0;
+        width: 33.3%;
+        justify-content: center;
+    }
+
+
+
+    .features-text {
+        margin-left: 40px;
+    }
+
+    .features-list {
+        font-size: inherit;
+        font-weight: 600;
+    }
+
+    
+
+    .subscription-plans-container {
+        width: 100%;
+    }
+
+    .plan {
+        padding: 2em;
+        width: 35%;
+        margin-right: 3vw;
+    }
+
+    .privilage-list{
+        font-size: inherit;
+    }
+
+
+
+
+    .locations-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map {
+        margin-top: 2em;
+        width: 80%;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .sponsorship {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .sponsorship .sponsor {
+        margin: 0;
+        width: 20%;
+    }
+
+    .sponsorship .sponsor img {
+        width: 100%;
+    }
+
+
+
+    .reviews-container {
+        padding-left: 9vw;
+    }
+
+
+    .subscribe-tab {
+        width: 80%;
+        min-width: 923px;
+        justify-content: space-between;
+    }
+
+    .subscribe-tab-text {
+        margin-right: 0;
+        max-width: 50%;
+    }
+
+    .footer-content {
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    .footer-content .laslesvpn {
+        margin: 0;
+    }
+
+    .footer-nav-container {
+        width: 35%;
+        justify-content: space-between;
+    }
+
+    .footer-content .footer-nav {
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 1120px) {
+    header .logo .logo-title {
+        display: none;
+    }
+
+    header .logo svg {
+        margin-right: 0;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+      font-size: calc(15 * (50vw / 10000 + 1px)) ; 
+      width: 100vw;
+    }
+
+    .flex-container {
+        padding: 0 4em;
+    }
+
+    h1 {
+        font-size: 5vw;
+        line-height: 140%;
+    }
+
+    h2 {
+        font-size: 3.2vw;
+        line-height: 140%;
+    }
+
+    h3 {
+        font-size: 2vw;
+        line-height: 140%;
+    }
+
+    .section-paragraph {
+        margin-top: 0.8em;
+    }
+
+
+    .header-content {
+        padding: 3em 0;
+    }
+
+
+    header .logo {
+        font-size: inherit;
+    }
+
+
+    header .logo .logo-title {
+        display: none;
+    }
+
+    header .logo svg {
+        margin-right: 0;
+        width: 2.5em;
+    }
+
+
+
+
+    .main-content {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text {
+        max-width: 70% ;
+        padding: 3em 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-image {
+        position: initial;
+    }
+
+    .main-image img {
+        width: 60vw;
+    }
+
+    .main-info {
+        width: 100%;
+        padding: 3em 4em;
+        margin-top: 5vw;
+    }
+
+    .main-info .info-block {
+        width: 33.3%;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+
+    .features-image img {
+        width: 45vw;
+    }
+
+    .features-text {
+        margin-left: 2em;
+    }
+
+    .subscription-content {
+        width: 100%;
+    }
+
+
+
+    section#subscription-plans {
+        padding: 0;
+    }
+
+    .subscription-plans-container {
+        padding: 1em 4em;
+        overflow-x: scroll;
+    }
+
+    .plan {
+        padding: 2em 2em 0;
+        margin-right: 2em;
+        width: 45%;
+        min-width: 220px;
+    }
+
+    .subscription-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subscription-image img {
+        width: 90%;
+    }
+
+    .plan .privilage-list li {
+        line-height: 150%;
+        margin-bottom: 1em;
+    }
+
+    .plan .selecting-area {
+        width: 100%;
+    }
+
+    .plan .selecting-area .price {
+        font-size: inherit;
+        font-size: 1.2em;
+    }
+
+    .plan .selecting-area .select-plan {
+        padding: 1em 0;
+        width: 70%;
+    }
+
+
+
+
+    .locations-content {
+        width: 100%;
+    }
+
+    .map {
+        margin-top: 7vw;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .sponsorship {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sponsorship .sponsor {
+        margin: 0;
+        width: 20%;
+    }
+
+    .sponsorship .sponsor img {
+        width: 100%;
+    }
+
+
+    section#reviews {
+        padding: 0;
+    }
+
+    .reviews-container {
+        padding: 1em 5em;
+        overflow-x: scroll;
+    }
+
+    .review-card {
+        border-width: 3px;
+    }
+
+    .review-card.active {
+        box-shadow: none;
+        outline: none;
+        border-color: #ddd; 
+    }
+
+    .review-sliding-tab {
+        display: none;
+    }
+
+
+
+    .subscribe-tab-container {
+        padding: 0 3em;
+    }
+
+    .subscribe-tab {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        padding: 3em 4em;
+    }
+
+    .subscribe-tab-text {
+        max-width: 70%;
+        margin: 0;
+    }
+
+    .subscribe-tab-text .section-paragraph {
+        margin: 0.7em 0 2em;
+    }
+
+
+
+    .footer-content {
+        padding-top: 25vw;
+        justify-content: space-between;
+    }
+
+    footer .laslesvpn {
+        margin-right: 0;
+        max-width: 35%;
+    }
+
+    footer .footer-nav-container {
+        width: 35%;
+        justify-content: space-between;
+    }
+    
+    footer .footer-nav {
+        margin: 0;
+    }
+
+}
+
+
+@media (max-width: 939px) {
+    header .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: inherit;
+        font-size: 2em;
+        color: var(--primary-text-color);
+        background-color: transparent;
+        border: none;
+    }
+
+    .main-info {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 0 70px 100px #0d102515;
+    }
+
+    .main-info::before {
+        content: none;
+    }
+
+    .main-info .info-block {
+        width: 100%;
+        border-right: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2em 0;
+        border-bottom: 2px solid #eeeff2;
+    }
+
+    .main-info .info-block:last-child {
+        padding: 2em 0;
+        border-bottom: none;
+    }
+
+    .main-info .block-icon {
+        margin: 0 0 0.8em;   
+    }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    
+    body {
+        font-size: calc(16 * (50vw / 10000 + 1px));
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .flex-container {
+        padding: 0 3em;
+    }
+
+    h1 {
+        font-size: 5vw;
+        line-height: 150%;
+    }
+
+    h2 {
+        font-size: 4vw;
+        line-height: 150%;
+    }
+
+    h3 {
+        font-size: 2.5vw;
+        line-height: 150%;
+    }
+
+
+    .header-content {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    header .logo .logo-title{
+        display: none;
+    }
+
+    header .logo svg {
+        margin: 0;
+        width: 1.8em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .menu-button {
+        font-size: 1.8em;
+        border: none;
+        background-color: transparent;
+        color: var(--primary-text-color);
+        padding: 0.6em;
+    }
+
+    .sign-up-button {
+        padding: 0.8em 2.4em;
+    }
+
+    .sign-in-link {
+        margin-right: 1em;
+    }
+
+
+
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text {
+        padding: 5em 0 2em;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text .section-paragraph {
+        max-width: 90%;
+        margin-top: 1.3em;
+    }
+
+    .main-image {
+      position: relative;
+      left: initial;
+      right: initial;  
+    }
+
+    .main-image img {
+        width: 80vw;
+    }
+    
+    .main-info {
+        max-width: 500px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 30px 40px;
+        box-shadow: 0 70px 100px #0d102515;
+    }
+
+    .main-info::before {
+        content: none;
+    }
+
+    .main-info .info-block {
+        padding: 0 0 30px;
+        margin: 0 0 30px;
+        border-right: 0;
+        flex-direction: column;
+        text-align: center;
+        border-bottom: 2px solid #eeeff2;
+        width: 100%;
+    }
+
+    .main-info .info-block:last-child {
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .main-info .block-icon {
+        margin: 0 0 12px 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .block-info .amount {
+        font-size: 18px;
+    }
+
+    .block-info .title a {
+        font-size: 14px;
+    }
+
+
+    .features-content {
+        flex-wrap: wrap-reverse;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .features-text {
+        max-width: 80%;
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .features-list {
+        font-size: 1em;
+        font-weight: 600;
+        margin-top: 3em;
+    }
+
+    .features-image img {
+        width: 80vw;
+    }
+
+
+
+    section#subscription-plans {
+        padding: 0;
+    }
+
+    .subscription-content {
+        max-width: 100%;
+    }
+
+    .subscription-text .section-paragraph {
+        max-width: 80%;
+    }
+
+    .subscription-plans-container {
+        overflow-x: scroll;
+        padding: 1em 3em 3em;
+    }
+
+    .plan {
+        min-width: 47%;
+        padding: 1.5em 2em;
+        align-items: center;
+        margin-right: 2em;
+        min-height: 40em;
+    }
+
+    .plan .subscription-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .plan .subscription-image img {
+        width: 50%;
+    }
+
+    .plan .privilage-list li {
+        margin-bottom: 1em;
+        line-height: 150%;
+    }
+
+    .check-box {
+        margin-right: 1em;
+    }
+
+    .selecting-area .price {
+        font-size: inherit;
+    }
+
+    .selecting-area .price {
+        font-size: 1.3em ;
+    }
+
+    .selecting-area .select-plan {
+        padding: 1em 7vw;
+    }
+
+
+
+    .locations-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .locations-text {
+        max-width: 65%;
+    }
+
+    .locations-text h2 {
+        max-width: 100%;
+    }
+
+    .locations-content .section-paragraph {
+        max-width: 100%;
+    }
+
+    .map {
+        margin-top: 3em;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .sponsorship {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sponsorship .sponsor {
+        margin: 0;
+        width: 20%;
+    }
+
+    .sponsorship .sponsor img {
+        width: 100%;
+    }
+
+
+
+
+    section#reviews {
+        padding: 0;
+    }
+
+    .reviews-content {
+        padding: 6em 0 15em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-text {
+        max-width: 70%;
+    }
+
+    .reviews-container {
+        max-width: 100%;
+        overflow-x: scroll;
+        padding: 1em 4em;
+    }
+
+    .review-card.active {
+        outline: none;
+        border-color: #ddd;
+        box-shadow: none;
+    }
+
+    .review-sliding-tab {
+        display: none;
+    }
+
+
+
+    .subscribe-tab-container {
+        padding: 0 3em;
+    }
+
+    .subscribe-tab {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        padding: 3em 4em;
+    }
+
+    .subscribe-tab-text {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .subscribe-tab-text .section-paragraph {
+        margin: 0.7em 0 2em;
+    }
+
+    
+
+    .footer-content {
+        padding-top: 17em;
+        flex-direction: column;
+        position: relative;
+    }
+
+    footer .laslesvpn {
+        margin: 0;
+        padding: 0 2em 2em;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 2px solid rgb(238, 239, 242);
+    }
+
+    footer .logo {
+        font-size: 2em;
+    }
+
+    .laslesvpn .section-paragraph {
+        margin-top: 2.5em;
+        max-width: 85%;
+    }
+
+    .laslesvpn .social-container {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    footer .social-network {
+        font-size: 1.5em;
+        margin: 0;
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+    .initials {
+        position: absolute;
+        bottom: 2em;
+    }
+
+    .footer-nav-container {
+        padding: 2em;
+        border-bottom: 2px solid rgb(238, 239, 242);
+    }
+
+    .footer-nav {
+        margin-right: 20vw;
+    }
+
+    .footer-nav:last-child {
+        margin: 0;
+    }
+
+    footer h3 {
+        font-size: 1.2em;
+    }
+
+    .earn-money-container {
+        padding: 2em;
+        border-bottom: 2px solid rgb(238, 239, 242);
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .mobile {
+        display: initial;
+    }
+
+    body {
+        font-size: calc(14 * (50vw / 10000 + 1px));
+        line-height: 150%;
+    }
+
+    h1 {
+        font-size: 2em ;
+        line-height: 120%;
+    }
+
+    h2 {
+        font-size: 1.3em;
+        line-height: 120%;
+    }
+
+    h3 {
+        font-size: 1.1em;
+        line-height: 120%;
+    }
+
+
+    .flex-container {
+        padding: 0 16px;
+    }
+
+    header {
+        box-shadow: 0 5px 50px #0d102510;
+    }
+
+    .header-content {
+        padding: 20px 0;
+        width: 100%;
+    }
+
+    .menu-button {
+        padding: 0;
+        color: var(--primary-text-color);
+        width: 27px;
+        font-size: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent;
+    }
+
+    .logo .logo-title {
+        display: none;
+    }
+
+    .logo svg {
+        display: block;
+        width: 27px;
+        margin: 0;
+    }
+
+    .sign-up-button {
+        padding: 0.8em 2em;
+    }
+
+    .sign-in-link {
+        margin-right: 1.5em;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+
+    .main-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .main-text {
+        width: 100%;
+        padding: 60px 0 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-text .section-paragraph {
+        max-width: 20em;
+    }
+
+    .section-paragraph {
+        margin-top: 1.3em;
+    }
+
+    button.primary-style {
+        min-width: 120px;
+    }
+
+    .get-started {
+        margin-top: 30px;
+    }
+
+    .main-image {
+        position: absolute;
+        top: 300px;
+        left: -90px;
+        z-index: -1;
+    }
+
+    .main-image img {
+        width: 100vw;
+    }
+
+    .main-info {
+        margin-top: 70vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: initial;
+        padding: 30px 40px;
+        box-shadow: 0 70px 70px #0d102515;
+    }
+
+    .main-info::before {
+        content: none;
+    }
+
+    .main-info .info-block {
+        padding: 0 0 30px;
+        margin: 0 0 30px;
+        border-right: 0;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 2px solid #eeeff2;
+    }
+
+    .main-info .info-block:last-child {
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+    }
+
+    .main-info .block-icon {
+        margin: 0 0 12px 0;
+        width: 60px;
+        height: 60px;
+    }
+
+    .block-info .amount {
+        font-size: 18px;
+    }
+
+    .block-info .title a {
+        font-size: 14px;
+    }
+
+    .features-content {
+        position: relative;
+        padding-bottom: 55vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .features-image {
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .features-image img {
+        width: 80vw;
+    }
+
+    .features-text {
+        margin: 0;
+        text-align: center;
+        align-items: center;
+        max-width: 70vw;
+    }
+
+
+
+
+    section#subscription-plans  {
+        width: 100vw;
+        padding: 0;
+    }
+
+    .subscription-content {
+        padding-top: 70px;
+        width: 100%;
+    }
+
+    .subscription-text .section-paragraph{
+        max-width: 70%;
+    }
+
+    .subscription-plans-container {
+        margin-top: 5vw;
+        width: 100%;
+        overflow-x:scroll;
+        padding:10px 40px;
+    }
+
+    .plan {
+        padding: 30px 70px 140px;
+        min-height: 400px;
+        margin-right: 40px;
+        border-width: 3px;
+    }
+
+    .plan .plan-title {
+        margin: 15px 0;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .subscription-image img {
+        width: 80px;
+    }
+
+    .privilage-list {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .selecting-area .price {
+        font-size: 16px;
+    }
+
+    button.select-plan {
+        padding: 10px 40px;
+        margin-top: 10px;
+    }
+
+    .check-box {
+        margin-right: 15px;
+    }
+
+
+
+    .locations-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+
+    .locations-text {
+        max-width: 70%;
+    }
+
+    .map {
+        margin-top: 10vw;
+    }
+
+    .map img {
+        width: 90vw;
+    }
+
+    .sponsorship {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sponsorship .sponsor {
+        margin: 0;
+        width: 20%;
+    }
+
+    .sponsorship .sponsor img {
+        width: 100%;
+    }
+
+
+
+
+
+    .reviews-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews-text {
+        max-width: 70%;
+    }
+
+    .reviews-container {
+        display: block;
+        padding: 0;
+    }
+
+    .review-card {
+        margin: 0 0 40px;
+        min-width: auto;
+        max-width: auto;
+        padding: 2em;
+    }
+
+    .review-card .top {
+        width: 100%;
+    }
+
+    .review-card .top .avatar {
+        width: 3em;
+        height: 3em;
+    }
+
+    .review-card .top .avatar img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .review-card .top .user-location {
+        font-size: 0.8em;
+    }
+
+    .review-card.active {
+        outline: none;
+        border-color: #ddd;
+        box-shadow: initial;
+    }
+
+    .review-sliding-tab {
+        display: none;
+    }
+
+
+
+    .subscribe-tab-container {
+        padding: 0 16px;
+    }
+
+    .subscribe-tab {
+        display: block;
+        text-align: center;
+        padding: 2em 4.5em;
+    }
+
+    .subscribe-tab-text {
+        margin: 0;
+    }
+
+    .subscribe-tab-text .section-paragraph {
+        margin-top: 0.8em;
+    }
+
+    .subscribe-button {
+        margin-top: 0.8em;
+    }
+
+    footer.flex-container {
+        padding: 0 10vw;
+    }
+
+    .footer-content {
+        padding-top: 200px;
+        display: block;
+        position: relative;
+    }
+
+    footer .laslesvpn {
+        margin: 0;
+        max-width: 100%;
+        padding-bottom: 2em;
+        border-bottom: 0.2em solid rgb(238, 239, 242);
+    }
+
+    .laslesvpn .logo {
+        font-size: 2em;
+    }
+
+    .laslesvpn .logo svg {
+        margin-right: 0.5em;
+        width: 1.5em;
+    }
+
+    footer .social-container {
+        margin: 5em 0 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    footer .social-network {
+        width: 3em;
+        height: 3em;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    footer .initials {
+        position: absolute;
+        bottom: 2em;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+        font-size: 1.3em;
+    }
+
+    footer h3 {
+        font-size: 1em;
+    }
+
+    .footer-nav-container {
+        padding: 2em 0;
+        border-bottom: 0.2em solid rgb(238, 239, 242);
+        justify-content: space-between;
+    }
+
+    .footer-nav {
+        font-size: 1.2em;
+        margin: 0;
+    }
+
+    footer .footer-content li {
+        margin-bottom: 1.5em;
+    }
+
+    .earn-money-container {
+        padding: 2em 0;
+        font-size: 1.2em;
+    }
+
+}
